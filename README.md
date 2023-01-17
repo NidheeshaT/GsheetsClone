@@ -8,5 +8,11 @@ tailwind setup with html css
 basic header and table setup
 
 
-04:32:39:<br>
+16:32:39:<br>
 table is setup with writing properties
+
+20:49:24<br>
+table cell focus
+
+22:37:52<br>
+resizable table

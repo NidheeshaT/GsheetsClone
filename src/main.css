@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+    --main:#6C00FF;
+    --second:#3C79F5;
+}
 table {
     counter-reset: rowNumber;
 }
@@ -16,13 +20,27 @@ tbody tr:before {
     font-size: small;
     text-align: center;
     min-width: 1em;
-    padding: 0 5px;
+    /* padding: 0 5px; */
     border: 1px solid rgb(209, 209, 209);
 }
 thead tr:before {
     display: table-cell;
     content: "";
-    min-width: 1em;
-    padding: 0 5px;
+    width: 40px !important;
+    /* padding: 0 5px; */
     border: 1px solid rgb(209, 209, 209);
+}
+
+tbody tr:after {
+    /* display: table-cell; */
+    position: absolute;
+    content: "";
+    width: 40px;
+    height: 3px;
+    bottom: 0px;
+    left: 0px;
+}
+
+tbody tr:hover:after {
+    background-color: var(--second);
 }
