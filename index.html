@@ -5,9 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A+ Sheets</title>
-    <link href="/output.css" rel="stylesheet">
-</head>
-<body>
-    <h1 class="m-0 p-0 text-green-200">A+ sheets</h1>
+    <link href="./dist/output.css" rel="stylesheet">
+    <script defer src="./src/main.js"></script>
+<body class="flex flex-col h-screen">
+    <main class="p-3 flex gap-5 items-center border-b-main">
+        <h1 class="m-0 p-0 text-main font-bold">
+            <img src="./dist/sheets.svg" alt="A+Sheets" width="50px" height="50px">
+        </h1>
+        <div class="flex flex-col items-start justify-start i flex-1">
+            <span contenteditable="true" class="p-1 font-medium border border-transparent focus-visible:outline-none
+             focus-visible:border-second rounded-md">Untitled spreadsheet</span>
+             <div class="p-1">
+                <div role="button">File</div>
+                <div></div>
+                <div></div>
+                <div></div>
+             </div>
+        </div>
+
+    </main>
+    <section class="w-screen flex-1 overflow-auto relative">
+
+        <table class="w-max border border-collapse flex-1 relative">
+            <thead class="sticky top-0 z-20">
+
+            </thead>
+            <tbody>
+
+            </tbody>
+
+    </table>
+</section>
 </body>
 </html>

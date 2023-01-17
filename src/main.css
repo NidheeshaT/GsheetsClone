@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+table {
+    counter-reset: rowNumber;
+}
+
+tbody tr {
+    counter-increment: rowNumber;
+} 
+
+tbody tr:before {
+    display: table-cell;
+    content: counter(rowNumber);
+    font-size: small;
+    text-align: center;
+    min-width: 1em;
+    padding: 0 5px;
+    border: 1px solid rgb(209, 209, 209);
+}
+thead tr:before {
+    display: table-cell;
+    content: "";
+    min-width: 1em;
+    padding: 0 5px;
+    border: 1px solid rgb(209, 209, 209);
+}
